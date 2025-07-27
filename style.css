@@ -1,0 +1,176 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    min-height: 1000px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}
+
+/* --- Left Column --- */
+.left-column {
+    background-color: #164A41;
+    width: 35%;
+    padding: 30px;
+    color: #fff;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 5px solid #4D774E;
+    overflow: hidden; /* This keeps the image round */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #F1B24A;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.left-column .section {
+    margin-bottom: 30px;
+}
+
+.left-column .section h3 {
+    font-size: 1.2em;
+    border-bottom: 2px solid #F1B24A;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.contact-item i {
+    width: 20px;
+    margin-right: 10px;
+    color: #F1B24A;
+}
+
+.skill p {
+    margin: 0 0 5px 0;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #4D774E;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.skill-bar div {
+    background-color: #f2f2f2;
+    height: 10px;
+    border-radius: 5px;
+}
+
+
+/* --- Right Column --- */
+.right-column {
+    width: 65%;
+    padding: 40px;
+    color: #333;
+}
+
+.right-column .section {
+    margin-bottom: 35px;
+}
+
+.right-column .section h2 {
+    font-size: 1.5em;
+    color: #164A41;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #164A41;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.right-column p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.job-info {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555;
+    margin: 5px 0 10px 0;
+}
+
+.job ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.job li {
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        margin: 0;
+    }
+    .left-column, .right-column {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
